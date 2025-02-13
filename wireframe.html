@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .products-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .products-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card .content {
+            padding: 15px;
+        }
+
+        .product-card .content h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .product-card .content p {
+            color: #777;
+            margin: 10px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="products-section">
+        <h1>Our Products</h1>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="wood-carving.jpg" alt="Product Image">
+                <div class="content">
+                    <h3>Product Name</h3>
+                    <p>Product Details</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="thangka.jpg" alt="Product Image">
+                <div class="content">
+                    <h3>Product Name</h3>
+                    <p>Product Details</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="metal-statues.jpg" alt="Product Image">
+                <div class="content">
+                    <h3>Product Name</h3>
+                    <p>Product Details</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="souvenirs.jpg" alt="Product Image">
+                <div class="content">
+                    <h3>Product Name</h3>
+                    <p>Product Details</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="funky-bags.jpg" alt="Product Image">
+                <div class="content">
+                    <h3>Product Name</h3>
+                    <p>Product Details</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="scarves.jpg" alt="Product Image">
+                <div class="content">
+                    <h3>Product Name</h3>
+                    <p>Product Details</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

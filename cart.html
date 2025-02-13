@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - TimberArt Nepal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f7f7f7;
+            font-family: Arial, sans-serif;
+        }
+        .cart-container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .cart-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .cart-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .cart-item .item-details {
+            flex: 1;
+            margin-left: 15px;
+        }
+        .cart-item .item-details h5 {
+            font-size: 1rem;
+            margin: 0;
+        }
+        .cart-item .item-details p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .cart-item .item-price {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #4267B2;
+        }
+        .cart-summary {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .cart-summary .total-label {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .cart-summary .total-price {
+            font-size: 1.5rem;
+            color: #4267B2;
+        }
+        .cart-buttons {
+            margin-top: 20px;
+            text-align: right;
+        }
+        .cart-buttons .btn {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart-container">
+        <h2 class="cart-title">Your Cart</h2>
+        <!-- Cart Items -->
+        <div class="cart-item">
+            <img src="woodcarving.png" alt="Wood Carving">
+            <div class="item-details">
+                <h5>Wood Carving</h5>
+                <p>Beautifully crafted wooden artifact.</p>
+            </div>
+            <span class="item-price">NPR12000</span>
+        </div>
+        <div class="cart-item">
+            <img src="thangka.png" alt="Thangka">
+            <div class="item-details">
+                <h5>Thangka</h5>
+                <p>Traditional Nepali scroll painting.</p>
+            </div>
+            <span class="item-price">NPR11500</span>
+        </div>
+        <div class="cart-item">
+            <img src="scarves.png" alt="Scarves">
+            <div class="item-details">
+                <h5>Scarves</h5>
+                <p>Handmade colorful scarf.</p>
+            </div>
+            <span class="item-price">NPR1449</span>
+        </div>
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+            <p class="total-label">Total:</p>
+            <p class="total-price">NPR24,949</p>
+        </div>
+        <!-- Buttons -->
+        <div class="cart-buttons">
+            <a href="website.html#products" class="btn btn-secondary btn-back">Countinue Shopping</a>
+            <button class="btn btn-primary" onclick="window.location.href='checkout.html'">Checkout</button>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
